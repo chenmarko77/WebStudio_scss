@@ -36,8 +36,6 @@ li {
   color: var(--dark-color);
 }
 
-
-
 .header-navigation a {
   text-decoration: none;
   color: var(--dark-color);
@@ -46,7 +44,7 @@ li {
   margin-bottom: 25px;
 }
 
-.header-navigation{
+.header-navigation {
   display: flex;
   width: 1170px;
   margin: 0 auto;
@@ -70,7 +68,7 @@ li {
   color: var(--dark-color);
 }
 
-.header-list{
+.header-list {
   display: flex;
   height: 16px;
   width: 281px;
@@ -81,19 +79,19 @@ li {
   margin-top: 32px;
 }
 
-.header-studio{
+.header-studio {
   width: 45px;
 }
 
-.header-portfolio{
+.header-portfolio {
   width: 72px;
 }
 
-.header-contacts{
+.header-contacts {
   width: 64px;
 }
 
-.header_mail_tel{
+.header_mail_tel {
   display: flex;
   width: 307px;
   justify-content: space-between;
@@ -103,11 +101,11 @@ li {
   margin-top: 32px;
 }
 
-.header-mail{
+.header-mail {
   width: 135px;
 }
 
-.header-tel{
+.header-tel {
   width: 135px;
 }
 
@@ -117,7 +115,7 @@ a:hover {
 
 .main-call_to_action {
   background-color: var(--footer-color);
-  height: 600px;  
+  height: 600px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -152,15 +150,70 @@ button {
   border-radius: 4px;
 }
 
-.activities-item{
-  width: 270px;
-height: 98px;
-top: 774px;
-left: 215px;
-gap: 0px;
-opacity: 0px;
 
+
+.activities-attention::before{
+  content: "";
+  display: flex;
+  background-image: url("../img/antenna.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-team);
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+  border-radius: 4px;
 }
+
+.activities-punctuality::before{
+  content: "";
+  display: flex;
+  background-image: url("../img/clock.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-team);
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.activities-planning::before{
+  content: "";
+  display: flex;
+  background-image: url("../img/diagram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-team);
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.activities-technologies::before{
+  content: "";
+  display: flex;
+  background-image: url("../img/astronaut.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--background-team);
+  width: 270px;
+  height: 120px;
+
+  margin-bottom: 30px;
+  border-radius: 4px;
+}
+
+.text-list li{
+  width: 270px;
+  height:248px;
+}
+
+
 
 .activities-title {
   font-size: 14px;
@@ -188,6 +241,8 @@ opacity: 0px;
   letter-spacing: 0.03em;
   text-align: center;
   color: var(--dark-color);
+
+
 }
 
 .activities-list {
@@ -249,14 +304,12 @@ opacity: 0px;
   text-align: center;
 }
 
-.img-list{
+.img-list {
   display: flex;
   width: 1170px;
   margin: 0 auto;
   justify-content: space-between;
   height: 368px;
-
-  
 }
 
 .img-item {
@@ -301,7 +354,7 @@ footer {
   color: var(--footer-contacts);
 }
 
-.footer-all{
+.footer-all {
   display: block;
   width: 1170px;
   margin: 0 auto;
@@ -309,7 +362,7 @@ footer {
   padding-top: 60px;
 }
 
-.footer-number{
+.footer-number {
   margin-top: 9px;
   padding-bottom: 60px;
 }
