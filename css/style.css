@@ -110,8 +110,19 @@ li {
   width: 135px;
 }
 
-a:hover {
+
+
+a{
+  transition-property: color;
+  transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+cursor: pointer;
+}
+
+
+li a:hover {
   color: var(--button-color);
+  text-decoration: underline;
 }
 
 .main-call_to_action {
@@ -315,13 +326,13 @@ button {
   width: 1170px;
   margin: 0 auto;
   justify-content: space-between;
-  height: 368px;
+  
   
 }
 
 .img-item {
   width: 270px;
-  height: 368px;
+  height: 428px;
   top: 1632px;
   left: 215px;
   border-radius: 0px, 0px, 4px, 4px;
@@ -329,6 +340,58 @@ button {
 
   border-radius: 0px, 0px, 4px, 4px;
   box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001F;
+}
+
+.social-networks{
+  width: 206px;
+height: 44px;
+display: flex;
+justify-content: space-between;
+margin: 0 auto;
+margin-top: 16px;
+}
+
+.team-logo{
+  width: 44px;
+  height: 44px;
+  display: inline-block;
+  background-size: cover;
+}
+
+.logo-instagram{
+  background-image: url("../img/instagram.svg");
+}
+
+.logo-twitter{
+  background-image: url("../img/twitter.svg");
+}
+
+.logo-facebook{
+  background-image: url("../img/facebook.svg");
+}
+
+.logo-linkedin{
+  background-image: url("../img/linkedin.svg");
+}
+
+.logo-twitter:hover,
+.team-logo:focus{
+background-image: url("../img/twitterblue.svg");
+}
+
+.logo-facebook:hover,
+.team-logo:focus{
+background-image: url("../img/facebookblue.svg");
+}
+
+.logo-linkedin:hover,
+.team-logo:focus{
+background-image: url("../img/linkedinblue.svg");
+}
+
+.logo-instagram:hover,
+.team-logo:focus{
+background-image: url("../img/instagramblue.svg");
 }
 
 footer a {
