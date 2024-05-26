@@ -394,12 +394,80 @@ background-image: url("../img/linkedinblue.svg");
 background-image: url("../img/instagramblue.svg");
 }
 
+.company-logos{
+  width: 1170px;
+height: 92px;
+display: flex;
+justify-content: space-between;
+margin: 0 auto;
+margin-bottom: 94px;
+}
+
+.company-logos div{
+  height: 92px;
+  width: 170px;
+  cursor: pointer;
+}
+
+.ya-co{
+  background-image: url("../img/client1.svg");
+}
+.company-tagline-here{
+  background-image: url("../img/client2.svg");
+}
+.company{
+  background-image: url("../img/client3.svg");
+}
+.foster-peters{
+  background-image: url("../img/client4.svg");
+}
+.brand{
+  background-image: url("../img/client5.svg");
+}
+.company-tagline{
+  background-image: url("../img/client6.svg");
+}
+
+.ya-co:hover,
+.clients-logo:focus{
+background-image: url("../img/client1blue.svg");
+}
+
+.company-tagline-here:hover,
+.clients-logo:focus{
+background-image: url("../img/client2blue.svg");
+}
+
+.company:hover,
+.clients-logo:focus{
+background-image: url("../img/client3blue.svg");
+}
+
+.foster-peters:hover,
+.clients-logo:focus{
+background-image: url("../img/client4blue.svg");
+}
+
+.brand:hover,
+.clients-logo:focus{
+background-image: url("../img/client5blue.svg");
+}
+
+.company-tagline:hover,
+.clients-logo:focus{
+background-image: url("../img/client6blue.svg");
+}
+
+
+
 footer a {
   text-decoration: none;
 }
 
 footer {
   background-color: var(--footer-color);
+  display: flex;
+
 }
 
 .footer-logo-studio {
@@ -428,14 +496,88 @@ footer {
 }
 
 .footer-all {
-  display: block;
-  width: 1170px;
-  margin: 0 auto;
-
+  width: 231px;
   padding-top: 60px;
+
+  margin-right: 70px;
 }
 
 .footer-number {
   margin-top: 9px;
   padding-bottom: 60px;
+}
+
+.footer-join{
+  width: 206px;
+height: 80px;
+margin-top: 72px;
+}
+
+
+.footer-join-text{
+  color: var(--background-general);
+  width: 116px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+text-transform: uppercase;
+
+margin-bottom: 20px;
+}
+
+.footer-social-networks{
+  width: 206;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-logo{
+  width: 44px;
+  height: 44px;
+
+}
+
+.footer-wraper{
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer-logo-instagram{
+  background-image: url("../img/footerinstagram.svg");
+}
+
+.footer-logo-twitter{
+  background-image: url("../img/footer-twitter.svg");
+}
+
+.footer-logo-facebook{
+  background-image: url("../img/footerfacebook.svg");
+}
+
+.footer-logo-linkedin{
+  background-image: url("../img/footerlinkedin.svg");
+}
+
+.footer-logo-twitter:hover,
+.footer-logo:focus{
+background-image: url("../img/twitterblue.svg");
+}
+
+.footer-logo-facebook:hover,
+.footer-logo:focus{
+background-image: url("../img/facebookblue.svg");
+}
+
+.footer-logo-linkedin:hover,
+.footer-logo:focus{
+background-image: url("../img/linkedinblue.svg");
+}
+
+.footer-logo-instagram:hover,
+.footer-logo:focus{
+background-image: url("../img/instagramblue.svg");
 }
