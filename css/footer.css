@@ -1,0 +1,103 @@
+.footer {
+  background-color: var(--footer-color);
+  display: flex;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+.footer-wrapper-all {
+  width: 231px;
+  padding-top: 60px;
+  margin-right: 70px;
+}
+.footer-wrapper-all-logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.footer-wrapper-all-logo-web {
+  color: var(--button-color);
+}
+.footer-wrapper-all-logo-studio {
+  color: var(--background-general);
+}
+.footer-wrapper-all-list-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--footer-contacts);
+}
+.footer-wrapper-all-list-item-address {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--background-general);
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.footer-wrapper-all-list-item-number {
+  margin-top: 9px;
+  padding-bottom: 60px;
+}
+.footer-wrapper-join {
+  width: 206px;
+  height: 80px;
+  margin-top: 72px;
+}
+.footer-wrapper-join-text {
+  color: var(--background-general);
+  width: 116px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-wrapper-join-social {
+  width: 206;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrapper-join-social-networks-logo {
+  width: 44px;
+  height: 44px;
+}
+.footer-wrapper-join-social-networks-instagram {
+  background-image: url("../img/footerinstagram.svg");
+}
+.footer-wrapper-join-social-networks-instagram:hover, .footer-wrapper-join-social-networks-logo:focus {
+  background-image: url("../img/instagramblue.svg");
+}
+.footer-wrapper-join-social-networks-twitter {
+  background-image: url("../img/footer-twitter.svg");
+}
+.footer-wrapper-join-social-networks-twitter:hover, .footer-wrapper-join-social-networks-logo:focus {
+  background-image: url("../img/twitterblue.svg");
+}
+.footer-wrapper-join-social-networks-facebook {
+  background-image: url("../img/footerfacebook.svg");
+}
+.footer-wrapper-join-social-networks-facebook:hover, .footer-wrapper-join-social-networks-logo:focus {
+  background-image: url("../img/facebookblue.svg");
+}
+.footer-wrapper-join-social-networks-linkedin {
+  background-image: url("../img/footerlinkedin.svg");
+}
+.footer-wrapper-join-social-networks-linkedin:hover, .footer-wrapper-join-social-networks-logo:focus {
+  background-image: url("../img/linkedinblue.svg");
+}

@@ -1,0 +1,65 @@
+.header-navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+.header-navigation-logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.header-navigation-logo-web {
+  color: var(--button-color);
+}
+.header-navigation-logo-studio {
+  color: var(--dark-color);
+}
+.header-navigation a {
+  text-decoration: none;
+  color: var(--dark-color);
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+.header-navigation-list {
+  display: flex;
+  height: 16px;
+  width: 281px;
+  justify-content: space-between;
+  margin-left: 93px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.header-navigation-list-item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--dark-color);
+}
+.header-navigation-list-item-studio {
+  width: 45px;
+}
+.header-navigation-list-item-portfolio {
+  width: 72px;
+}
+.header-navigation-list-item-contacts {
+  width: 64px;
+}
+.header-navigation-mailtel {
+  display: flex;
+  width: 307px;
+  justify-content: space-between;
+  margin-left: 344px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.header-navigation-mailtel-email {
+  width: 135px;
+}
+.header-navigation-mailtel-tel {
+  width: 135px;
+}

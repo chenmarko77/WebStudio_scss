@@ -1,0 +1,114 @@
+.footer {
+    background-color: var(--footer-color);
+    display: flex;
+    & a {
+      text-decoration: none;
+    }
+    &-wrapper {
+      width: 1170px;
+      margin: 0 auto;
+      display: flex;
+      &-all {
+        width: 231px;
+        padding-top: 60px;
+  
+        margin-right: 70px;
+        &-logo {
+          font-family: "Raleway";
+          font-size: 26px;
+          font-weight: 700;
+          line-height: 31px;
+          letter-spacing: 0.03em;
+          text-align: left;
+          &-web {
+            color: var(--button-color);
+          }
+          &-studio {
+            color: var(--background-general);
+          }
+        }
+        &-list-item {
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+          letter-spacing: 0.03em;
+          text-align: left;
+          color: var(--footer-contacts);
+  
+          &-address {
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+            text-align: left;
+            color: var(--background-general);
+  
+            margin-top: 20px;
+            margin-bottom: 9px;
+          }
+          &-number {
+            margin-top: 9px;
+            padding-bottom: 60px;
+          }
+        }
+      }
+      &-join {
+        width: 206px;
+        height: 80px;
+        margin-top: 72px;
+  
+        &-text {
+          color: var(--background-general);
+          width: 116px;
+          height: 16px;
+          font-size: 14px;
+          font-weight: 700;
+          line-height: 16.41px;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+  
+          margin-bottom: 20px;
+        }
+        &-social {
+          width: 206;
+          height: 44px;
+          display: flex;
+          justify-content: space-between;
+  
+          &-networks-logo {
+            width: 44px;
+            height: 44px;
+          }
+  
+          &-networks-instagram {
+            background-image: url("../img/footerinstagram.svg");
+          }
+          &-networks-instagram:hover,
+          &-networks-logo:focus {
+            background-image: url("../img/instagramblue.svg");
+          }
+          &-networks-twitter {
+            background-image: url("../img/footer-twitter.svg");
+          }
+          &-networks-twitter:hover,
+          &-networks-logo:focus {
+            background-image: url("../img/twitterblue.svg");
+          }
+          &-networks-facebook {
+            background-image: url("../img/footerfacebook.svg");
+          }
+          &-networks-facebook:hover,
+          &-networks-logo:focus {
+            background-image: url("../img/facebookblue.svg");
+          }
+          &-networks-linkedin {
+            background-image: url("../img/footerlinkedin.svg");
+          }
+          &-networks-linkedin:hover,
+          &-networks-logo:focus {
+            background-image: url("../img/linkedinblue.svg");
+          }
+        }
+      }
+    }
+  }
