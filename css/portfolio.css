@@ -1,4 +1,179 @@
 @import url("https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+.header-navigation {
+  display: flex;
+  width: 1170px;
+  margin: 0 auto;
+}
+.header-navigation-logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.header-navigation-logo-web {
+  color: var(--button-color);
+}
+.header-navigation-logo-studio {
+  color: var(--dark-color);
+}
+.header-navigation a {
+  text-decoration: none;
+  color: var(--dark-color);
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+.header-navigation-list {
+  display: flex;
+  height: 16px;
+  width: 281px;
+  justify-content: space-between;
+  margin-left: 93px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.header-navigation-list-item {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  text-align: left;
+  color: var(--dark-color);
+}
+.header-navigation-list-item-studio {
+  width: 45px;
+}
+.header-navigation-list-item-portfolio {
+  width: 72px;
+}
+.header-navigation-list-item-contacts {
+  width: 64px;
+}
+.header-navigation-mailtel {
+  display: flex;
+  width: 307px;
+  justify-content: space-between;
+  margin-left: 344px;
+  margin-bottom: 32px;
+  margin-top: 32px;
+}
+.header-navigation-mailtel-email {
+  width: 135px;
+}
+.header-navigation-mailtel-tel {
+  width: 135px;
+}
+
+li a:hover {
+  color: var(--button-color);
+  text-decoration: none;
+}
+
+.footer {
+  background-color: var(--footer-color);
+  display: flex;
+}
+.footer a {
+  text-decoration: none;
+}
+.footer-wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  display: flex;
+}
+.footer-wrapper-all {
+  width: 231px;
+  padding-top: 60px;
+  margin-right: 70px;
+}
+.footer-wrapper-all-logo {
+  font-family: "Raleway";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  text-align: left;
+}
+.footer-wrapper-all-logo-web {
+  color: var(--button-color);
+}
+.footer-wrapper-all-logo-studio {
+  color: var(--background-general);
+}
+.footer-wrapper-all-list-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--footer-contacts);
+}
+.footer-wrapper-all-list-item-address {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--background-general);
+  margin-top: 20px;
+  margin-bottom: 9px;
+}
+.footer-wrapper-all-list-item-number {
+  margin-top: 9px;
+  padding-bottom: 60px;
+}
+.footer-wrapper-join {
+  width: 206px;
+  height: 80px;
+  margin-top: 72px;
+}
+.footer-wrapper-join-text {
+  color: var(--background-general);
+  width: 116px;
+  height: 16px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16.41px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.footer-wrapper-join-social {
+  width: 206;
+  height: 44px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-wrapper-join-social-networks-logo {
+  width: 44px;
+  height: 44px;
+}
+.footer-wrapper-join-social-networks-instagram {
+  background-image: url("../img/footerinstagram.svg");
+}
+.footer-wrapper-join-social-networks-instagram:hover, .footer-wrapper-join-social-networks-logo:focus {
+  background-image: url("../img/instagramblue.svg");
+}
+.footer-wrapper-join-social-networks-twitter {
+  background-image: url("../img/footer-twitter.svg");
+}
+.footer-wrapper-join-social-networks-twitter:hover, .footer-wrapper-join-social-networks-logo:focus {
+  background-image: url("../img/twitterblue.svg");
+}
+.footer-wrapper-join-social-networks-facebook {
+  background-image: url("../img/footerfacebook.svg");
+}
+.footer-wrapper-join-social-networks-facebook:hover, .footer-wrapper-join-social-networks-logo:focus {
+  background-image: url("../img/facebookblue.svg");
+}
+.footer-wrapper-join-social-networks-linkedin {
+  background-image: url("../img/footerlinkedin.svg");
+}
+.footer-wrapper-join-social-networks-linkedin:hover, .footer-wrapper-join-social-networks-logo:focus {
+  background-image: url("../img/linkedinblue.svg");
+}
+
 :root {
   --button-color: #2196f3;
   --dark-color: #212121;
@@ -8,126 +183,28 @@
   --background-team: #f5f4fa;
   --footer-contacts: #ffffff99;
   --border-color: #ECECEC;
-
 }
 
 body {
   font-family: "Roboto";
 }
 
-.logo {
-  font-family: Raleway;
-  font-size: 26px;
-  font-weight: 700;
-  line-height: 31px;
-  letter-spacing: 0.03em;
-  text-align: left;
-}
-
-.logo-web {
-  color: var(--button-color);
-}
-
-.logo-studio {
-  color: var(--dark-color);
-}
-
 li {
   list-style-type: none;
 }
 
-header{
+a {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+header {
   border-bottom-width: 1px;
   border-color: var(--border-color);
   border-style: solid;
 }
-
-.header-navigation a {
-  text-decoration: none;
-  color: var(--dark-color);
-
-  margin-top: 24px;
-  margin-bottom: 25px;
-}
-
-.header-navigation{
-  display: flex;
-  width: 1170px;
-  margin: 0 auto;
-}
-
-.header-item {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: var(--dark-color);
-}
-
-.header-link {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-  text-align: left;
-  color: var(--dark-color);
-}
-
-.header-list{
-  display: flex;
-  height: 16px;
-  width: 281px;
-  justify-content: space-between;
-
-  margin-left: 93px;
-  margin-bottom: 32px;
-  margin-top: 32px;
-}
-
-.header-studio{
-  width: 45px;
-}
-
-.header-portfolio{
-  width: 72px;
-}
-
-.header-contacts{
-  width: 64px;
-}
-
-.header_mail_tel{
-  display: flex;
-  width: 307px;
-  justify-content: space-between;
-
-  margin-left: 344px;
-  margin-bottom: 32px;
-  margin-top: 32px;
-}
-
-.header-mail{
-  width: 135px;
-}
-
-.header-tel{
-  width: 135px;
-}
-
-a{
-  transition-property: color;
-  transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-cursor: pointer;
-}
-
-
-li a:hover {
-  color: var(--button-color);
-  text-decoration: underline;
-}
-
 
 button {
   background-color: var(--background-team);
@@ -137,15 +214,13 @@ button {
   line-height: 26px;
   letter-spacing: 0.03em;
   text-align: center;
-
   height: 38px;
   top: 174px;
   left: 512px;
   border-radius: 4px;
   border: none;
-
-    transition-property: color, background-color;
-    transition-duration: 250ms;
+  transition-property: color, background-color;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
@@ -169,116 +244,92 @@ button {
 .button5 {
   width: 130px;
 }
+
 button:hover {
   background-color: var(--button-color);
   color: var(--background-general);
 }
 
-.button-list{
+.button-list {
   display: flex;
   width: 575px;
   margin: 0 auto;
   justify-content: space-between;
-
   margin-top: 94px;
   margin-bottom: 50px;
 }
 
-.portfolio-item{
+.portfolio-item {
   border: 1px solid #eeeeee;
   width: 370px;
   height: 404px;
-
-    transition-property: box-shadow;
-    transition-duration: 250ms;
+  transition-property: box-shadow;
+  transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  position: relative;
 }
 
-.portfolio-item:hover{
-  box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000F, 0px 1px 1px 0px #0000001F;
+.portfolio-item:hover::after {
+  content: "The resource offers comprehensive offers with different levels of functionality and services. All this will allow the visitor to get comprehensive information about the company or private person.";
+  position: absolute; /* Position the pseudo-element relative to the img */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 294px;
+  background-color: rgba(33, 150, 243, 0.8980392157);
+  color: white;
+  opacity: 1; /* Optional: add opacity if you want to see the image through the color */
+  z-index: 1;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  padding-top: 63px;
 }
 
-.portfolio-name{
-font-size: 18px;
-font-weight: 700;
-line-height: 36px;
-letter-spacing: 0.06em;
-text-align: left;
-
-margin-top: 20px;
-margin-bottom: 4px;
-margin-left: 24px;
-
+.portfolio-item:hover {
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.1607843137), 0px 4px 4px 0px rgba(0, 0, 0, 0.0588235294), 0px 1px 1px 0px rgba(0, 0, 0, 0.1215686275);
 }
 
-.portfolio-text{
-font-size: 16px;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0.03em;
-text-align: left;
-
-margin-left: 24px;
-
+.portfolio-name {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0.06em;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 4px;
+  margin-left: 24px;
 }
 
-.portfolio-list{
+.portfolio-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  margin-left: 24px;
+}
+
+.portfolio-list {
   display: flex;
   width: 1170px;
   margin: 0 auto;
   justify-content: space-between;
   height: 1272px;
   align-content: space-between;
-
   flex-wrap: wrap;
-
   margin-bottom: 94px;
 }
 
-
-footer a {
-  text-decoration: none;
-}
-
-footer {
-  background-color: var(--footer-color);
-}
-
-.footer-logo-studio {
-  color: var(--background-general);
-}
-
-.footer-address {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: var(--background-general);
-
-  margin-top: 20px;
-  margin-bottom: 9px;
-}
-
-.footer-item {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  text-align: left;
-  color: var(--footer-contacts);
-}
-
-.footer-all{
-  display: block;
-  width: 1170px;
-  margin: 0 auto;
-
-  padding-top: 60px;
-}
-
-.footer-number{
-  margin-top: 9px;
-  padding-bottom: 60px;
+.header-navigation-list-item:hover::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  border-bottom: 4px solid var(--button-color);
+  transform: translateY(15px);
+  border-radius: 2px;
 }

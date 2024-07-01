@@ -28,12 +28,10 @@ a {
   cursor: pointer;
 }
 
-li a:hover {
-  color: var(--button-color);
-  text-decoration: underline;
-}
 
-.main-call_to_action {
+
+.main{
+&__call {
   background-image: url("../img/team.webp");
   background-repeat: no-repeat;
   background-position: center;
@@ -41,9 +39,8 @@ li a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
 
-.call_to_action-title {
+  &__title {
   color: var(--background-general);
   font-size: 44px;
   font-weight: 900;
@@ -56,24 +53,26 @@ li a:hover {
   margin-top: 200px;
   margin-bottom: 30px;
 }
-
-button {
-  background-color: var(--button-color);
-  color: var(--background-general);
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
-  text-align: center;
-
-  width: 216px;
-  height: 50px;
-  left: 692px;
-  border-radius: 4px;
-  box-shadow: 0px 4px 4px 0px #00000026;
+  &__button {
+    background-color: var(--button-color);
+    color: var(--background-general);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  
+    width: 216px;
+    height: 50px;
+    left: 692px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px 0px #00000026;
+  }
+}
 }
 
-.activities-attention::before {
+
+.main__activities__list__attention::before {
   content: "";
   display: flex;
   background-image: url("../img/antenna.svg");
@@ -87,7 +86,7 @@ button {
   border-radius: 4px;
 }
 
-.activities-punctuality::before {
+.main__activities__list__punctuality::before {
   content: "";
   display: flex;
   background-image: url("../img/clock.svg");
@@ -101,7 +100,7 @@ button {
   border-radius: 4px;
 }
 
-.activities-planning::before {
+.main__activities__list__planning::before {
   content: "";
   display: flex;
   background-image: url("../img/diagram.svg");
@@ -115,7 +114,7 @@ button {
   border-radius: 4px;
 }
 
-.activities-technologies::before {
+.main__activities__list__technologies::before {
   content: "";
   display: flex;
   background-image: url("../img/astronaut.svg");
@@ -129,12 +128,12 @@ button {
   border-radius: 4px;
 }
 
-.text-list li {
+.main__activities__list li {
   width: 270px;
   height: 248px;
 }
 
-.activities-title {
+.main__activities__list__attention__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 16px;
@@ -145,7 +144,7 @@ button {
   margin-bottom: 10px;
 }
 
-.activities-text {
+.main__activities__list__attention__title__text {
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
@@ -153,7 +152,7 @@ button {
   text-align: left;
 }
 
-.activities-name {
+.main__activities__name {
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
@@ -162,7 +161,7 @@ button {
   color: var(--dark-color);
 }
 
-.activities-list {
+.main__activities__img {
   display: flex;
   width: 1170px;
   margin: 0 auto;
@@ -172,12 +171,7 @@ button {
   margin-top: 50px;
 }
 
-.team {
-  background-color: var(--background-team);
-  padding-bottom: 94px;
-}
-
-.text-list {
+.main__activities__list {
   display: flex;
   width: 1170px;
   margin: 0 auto;
@@ -187,7 +181,12 @@ button {
   margin-bottom: 94px;
 }
 
-.team-title {
+.main__team {
+  background-color: var(--background-team);
+  padding-bottom: 94px;
+}
+
+.main__team__title, .main__clients__title {
   font-size: 36px;
   font-weight: 700;
   line-height: 42px;
@@ -199,7 +198,7 @@ button {
   padding-top: 94px;
 }
 
-.team-name {
+.img__list__item__team__name {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -211,7 +210,7 @@ button {
   text-align: center;
 }
 
-.team-role {
+.img__list__item__team__name__role {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -221,14 +220,14 @@ button {
   text-align: center;
 }
 
-.img-list {
+.main__team__list {
   display: flex;
   width: 1170px;
   margin: 0 auto;
   justify-content: space-between;
 }
 
-.img-item {
+.img__list__item {
   width: 270px;
   height: 428px;
   top: 1632px;
@@ -241,7 +240,7 @@ button {
     0px 1px 3px 0px #0000001f;
 }
 
-.social-networks {
+.img__list__item__social__networks {
   width: 206px;
   height: 44px;
   display: flex;
@@ -358,5 +357,12 @@ button {
 }
 
 
-
-
+.header-navigation-list-item:hover::after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  border-bottom: 4px solid var(--button-color);
+transform: translateY(15px);
+border-radius: 2px;
+}

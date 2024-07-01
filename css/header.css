@@ -63,3 +63,8 @@
 .header-navigation-mailtel-tel {
   width: 135px;
 }
+
+li a:hover {
+  color: var(--button-color);
+  text-decoration: none;
+}
