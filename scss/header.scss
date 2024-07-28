@@ -73,4 +73,46 @@
     text-decoration: none;
   }
 
-  
+  @media (max-width:768px){
+
+    .header{
+    &-navigation {
+      width: 768px;
+      height: 80px;
+      &-logo {
+        font-size: 24px;
+        line-height: 28.18px;
+
+        &-web {
+          margin-left: 15px;
+        }
+      }
+      & a {
+        margin-top: 26px;
+        margin-bottom: 26px;
+      }
+      &-list {
+        width: 283px;
+        margin-left: 87px;
+        height: 38px;
+      }
+      &-mailtel {
+        width: 123px;
+        display: flex;
+        flex-direction: column;
+
+        margin-left: 96px;
+        margin-bottom: 21px;
+        margin-top: 21px;
+        &-email {
+          height: 14px;
+          font-size: 14px;
+        }
+        &-tel {
+          height: 14px;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  }
